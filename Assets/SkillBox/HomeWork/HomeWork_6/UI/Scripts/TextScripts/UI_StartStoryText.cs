@@ -8,6 +8,7 @@ public class UI_StartStoryText : MonoBehaviour
 {
     [SerializeField] private StartingText _startingText;
     [SerializeField] private TextWriter _textWriter;
+
     [SerializeField] private StateMachineToStartGame _screenChahge;
 
     
@@ -29,6 +30,6 @@ public class UI_StartStoryText : MonoBehaviour
 
     private void Start()
     {
-        _textWriter.AddWriter(_text, _startStringText[_screenChahge.screen]);
+        _textWriter.AddWriter(_text, _startStringText[_screenChahge.screen - 1]);
     }
 }

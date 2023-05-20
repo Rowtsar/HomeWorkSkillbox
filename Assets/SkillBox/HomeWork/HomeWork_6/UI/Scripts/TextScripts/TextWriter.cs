@@ -27,7 +27,7 @@ public class TextWriter : MonoBehaviour
         if (_uiText != null)
         {
             _timer -= Time.deltaTime;
-            if (_timer <= 0f)
+            while (_timer <= 0f)
             {
 
                 //Display next character
